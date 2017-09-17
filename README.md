@@ -1,7 +1,7 @@
 # Wallpaper_Sorter
 
 For now how to run:
-install flask: `pip install flask`
+install flask: `pip install flask`  
 install flaskr (the demo app): `pip install editable .` at the top level
 
 Setup some environment variables and the database
