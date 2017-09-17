@@ -1,1 +1,1 @@
-from .flaskr import app
+from .wp_sorter import app

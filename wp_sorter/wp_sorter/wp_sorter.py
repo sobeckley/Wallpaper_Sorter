@@ -56,9 +56,7 @@ def initdb_command():
 @app.route('/')
 def show_entries():
     db = get_db()
-    cur = db.execute('SELECT title, text FROM entries ORDER BY id DESC')
-    entries = cur.fetchall()
-    return render_template('show_entries.html', entries=entries)
+    return render_template('layout.html')
 
 @app.route('/add', methods=['POST'])
 def add_entry():
