@@ -5,16 +5,16 @@ from flask import Flask, request, session, g, redirect, url_for, abort, \
      render_template, flash
 
 app = Flask(__name__) # create the application instance :)
-app.config.from_object(__name__) # load config from this file , flaskr.py
+app.config.from_object(__name__) # load config from this file , wp_sorter.py
 
 # Load default config and override config from an environment variable
 app.config.update(dict(
-    DATABASE=os.path.join(app.root_path, 'flaskr.db'),
+    DATABASE=os.path.join(app.root_path, 'wp_sorter.db'),
     SECRET_KEY='fake secret key that is top secret',
     USERNAME='admin',
     PASSWORD='admin'
 ))
-app.config.from_envvar('FLASKR_SETTINGS', silent=True)
+app.config.from_envvar('WP_SORTER_SETTINGS', silent=True)
 
 # DATABASE STUFF
 
